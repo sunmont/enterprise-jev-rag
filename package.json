@@ -1,0 +1,27 @@
+{
+  "name": "enterprise-jev-rag",
+  "version": "1.0.0",
+  "description": "Enterprise-grade System 1 (Jev) / System 2 (Pi) RAG pipeline with vector chunking & DeepSeek Harness (DSH)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "^0.11.0",
+    "@earendil-works/pi-coding-agent": "^1.2.0",
+    "@typesafe/jev": "^2.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
